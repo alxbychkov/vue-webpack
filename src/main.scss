@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.message-wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 #000;
+
+    .message-title {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+}
