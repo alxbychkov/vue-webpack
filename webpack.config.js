@@ -15,6 +15,11 @@ module.exports = {
   devServer: {
     static: "./dist",
   },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000,
+  },
   module: {
     rules: [
       {
@@ -37,7 +42,7 @@ module.exports = {
     }),
     new VueLoaderPlugin(),
     new CopyPlugin({
-      patterns: [{ from: "public", to: "dist" }],
+      patterns: [{ from: "public", to: "./" }],
     }),
   ],
 };
